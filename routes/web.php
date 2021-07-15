@@ -26,3 +26,9 @@ Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback')
 /*Social Login Using Facebook Routes*/
 Route::get('auth/facebook', 'Auth\FacebookController@redirectToFacebook');
 Route::get('auth/facebook/callback', 'Auth\FacebookController@handleFacebookCallback');
+
+/*Payment using paytm Routes*/
+Route::get('/payment/{type}/{id}', 'PaymentController@order')->name('paytmcall');
+Route::post('/payment/status', 'PaymentController@paymentCallback')->name('status');
+
+
