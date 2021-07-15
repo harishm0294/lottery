@@ -32,7 +32,7 @@ return [
     'google' => [
         'client_id' => '837424825350-kjlgrfkfukgae8mk6ush4cio676cp8pd.apps.googleusercontent.com',
         'client_secret' => 'JZBDvUNycapGRggE7v1WHpi-',
-        'redirect' => 'http://localhost:8000/auth/google/callback',
+        'redirect' => 'http://localhost/india-play/auth/google/callback',
     ],
     'facebook' => [
         'client_id' => '133895722149612',
